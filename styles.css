@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: blanchedalmond;
+    background-image: url(./images/galaxy-exp1-byT3.png);
+    font-family: 'Open Sans', sans-serif;
+}
+div {
+    word-wrap: break-word;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+#menuBar div{
+    background-color: royalblue;
+    opacity: 0.8;
+}
+#menuBar div a{
+    background-color: royalblue;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+#menuBar div a:hover{
+    background-color: royalblue;
+    color: deepskyblue;
+}
+.page-header.page-header-small {
+    height: 60vh;
+    max-height: 360px;
+}
+.profile-page .page-header {
+    min-height: 550px;
+}
+.page-header {
+    background: rgba(44, 44, 44, 0.2);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(77, 226, 231, 0.6));
+}
+.page-header {
+    height: 100vh;
+    max-height: 1050px;
+    padding: 0;
+    color: #FFFFFF;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+.bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("./images/blue-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.page-header .container {
+    z-index: 2;
+}
+.page-header .container {
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    padding: 1em;
+}
+.container {
+    max-width: 1140px;
+}
+.container {
+    max-width: 960px;
+}
+.container {
+    max-width: 720px;
+}
+.container {
+    max-width: 540px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.avatar-img img{
+    border-radius: 50%;
+    position: relative;
+    height: 180px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+    border: 15px solid transparent;
+    transition: all 0.3s ease-out;
+}
+.avatar-img img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.blue-box {
+    position: relative;
+    background-color: royalblue;
+    color: white;
+    text-shadow: 1px 1px 0 #000;
+    width: 60%;
+    height: 100%;
+    opacity: 0.9;
+    margin-bottom: 5rem;
+    border-radius: 0.5rem;
+}
+
+.box-active {
+    transform: scale(1.08,1.08);
+    color: deepskyblue !important;
+    font-weight: 700;
+    text-shadow: 1px 1px #222;
+}
+
+.progress {
+    background-color: powderblue;
+}
+.progress-value {
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+    font-size: large;
+}
+.progress-container {
+    margin-bottom: 1em;
+    font-size: large;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: mediumblue;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.time-container {
+    padding: 1em 2.5em;
+    position: relative;
+    background-color: inherit;
+
+}
+
+/* The circles on the timeline */
+.time-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid #031db1e8;
+    top: 40px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+    left: 0 ;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 42px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #031db1e8 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12px;
+}
+
+
+/* The actual content */
+.content {
+    padding: 1rem;
+    background-color: #031db1e8;
+    position: relative;
+    border-radius: 6px;
+}
+
+.border-ngancach {
+    border-left: 2px solid white;
+    
+}
+@media screen and (max-width: 753px) {
+    .blue-box {
+        width: 90%;
+    }
+    .border-ngancach {
+        border-left: 0;
+        border-top: 2px solid white;
+        padding-top: 1rem;
+    }
+    /* Full-width containers */
+      .time-container {
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 25px;
+      }
+    
+    /* Make sure that all arrows are pointing leftwards */
+      .time-container::before {
+        left: 1.4em;
+        border: medium solid darkslateblue;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent darkslateblue transparent transparent;
+      }
+    
+    /* Make sure all circles are at the same spot */
+      .right::after {
+        left: -12px;
+      }
+    
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+}
